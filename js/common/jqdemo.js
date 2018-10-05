@@ -98,32 +98,33 @@ $(document).ready(function(){
 			]
 		});
 	})
+	$('#page').fullpage({
+		navigation: true,
+		slidesNavigation: true,
+		verticalCentered: false,
+		licenseKey:"OPEN-SOURCE-GPLV3-LICENSE",
+		css3:false,
+		menu: '#menu',
+		anchors: ['firstPage', 'secondPage', '3rdPage' , '4rdPage'],
+		afterLoad: function(origin, destination, direction){
+			//section 2
+			if(destination.index == 1){
+				document.querySelector('.introduce').querySelector('.another').style.opacity = 1;
+				document.querySelector('.introduce').querySelector('.top_posi').style.opacity = 1;
+				}
+			else if(origin && origin.index == 1){
+				document.querySelector('.introduce').querySelector('li').style.opacity = 0;
+				document.querySelector('.introduce').querySelector('.top_posi').style.opacity = 0;
+			}
+		}
+	});
+	
 	var filter = "win16|win32|win64|mac|macintel";
 	if( navigator.platform ){
 		if( filter.indexOf(navigator.platform.toLowerCase())<0 ){
-			alert('모바일')
+			
 		} else {
-			alert('pc');
-			$('#page').fullpage({
-				navigation: true,
-				slidesNavigation: true,
-				verticalCentered: false,
-				licenseKey:"OPEN-SOURCE-GPLV3-LICENSE",
-				css3:false,
-				menu: '#menu',
-				anchors: ['firstPage', 'secondPage', '3rdPage' , '4rdPage'],
-				afterLoad: function(origin, destination, direction){
-					//section 2
-					if(destination.index == 1){
-						document.querySelector('.introduce').querySelector('.another').style.opacity = 1;
-						document.querySelector('.introduce').querySelector('.top_posi').style.opacity = 1;
-						}
-					else if(origin && origin.index == 1){
-						document.querySelector('.introduce').querySelector('li').style.opacity = 0;
-						document.querySelector('.introduce').querySelector('.top_posi').style.opacity = 0;
-					}
-				}
-			});
+			
 		}
 	}
 	
