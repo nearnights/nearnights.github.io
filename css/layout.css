@@ -1,0 +1,299 @@
+.header{
+    width:100%;
+}
+.headerbox{
+    position:fixed;
+    width:100%;
+    height:50px;
+    background:#333;
+    z-index:1001;
+    opacity:0.9;
+}
+.headlist{
+    width:1200px;
+    height:50px;
+    margin:0 auto;
+}
+.headlist .headlister li{
+    float:left;
+    width:100px;
+    height:50px;
+    padding:20px;
+    transition:all 1s;
+}
+.headlist .headlister li a{
+    color:rgb(255, 255, 255);
+    font-size:13px;
+}
+.iconwidth{
+    float:right;
+    width:200px;
+    height:30px;
+}
+.iconwidth li{
+    float:right;
+    width:25px;
+    height:25px;
+    margin-top:12.5px;
+    margin-left:10px;
+}
+.iconwidth li a img{
+    transition:all .5s;
+}
+.iconwidth li a img:hover{
+    transition:all .5s;
+    opacity:0.5;
+}
+/* 헤더부분 리스트 및 ui */
+.back_one,
+.back_two,
+.back_three,
+.back_four{
+    background-size:cover;
+    background-attachment:fixed;
+}
+.back_one{
+    background-image:url(../images/backgroundphoto.png);
+    padding: 6% 0 0 0;
+}
+.back_two{
+    background-image:url(../images/backgroundphoto2.png);
+    padding: 6% 0 0 0;
+}
+.back_three{
+    background:#333;
+    padding: 6% 0 0 0;
+}
+.back_four{
+    background-image:url(../images/backgroundphoto4.png);
+    padding: 6% 0 0 0;
+}
+.back_five{
+    
+}
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+    background:#fff!important;
+}
+.section{
+    text-align:center;
+}
+.container{
+    position:relative;
+    width:100%;
+    height:969px;
+}
+.container .move{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    border-radius:10px;
+}
+.container .width .move p{
+    text-align:left;
+}
+.container .width .move .spacing span{
+    font-size:70px;
+    font-weight:900;
+    font-family: 'Poiret One', cursive;
+    color:#fff;
+    letter-spacing:10px;
+}
+.container .width .move .spacingtwo span{
+    font-size:70px;
+    font-weight:900;
+    font-family: 'Poiret One', cursive;
+    color:#fff;
+    letter-spacing:22.5px;
+}
+/* 포트폴리오 인트로 부분 */
+.introduce{
+    width:100%;
+    height:969px;
+}
+.introduce .widthtwo{
+    width:1050px;
+    height:750px;
+    margin:0 auto;
+    margin-top:80px;
+}
+.introduce .twopage{
+    position:relative;
+}
+.introduce .widthtwo .top_posi{
+    width:100%;
+    height:100%;
+    opacity:0;
+    transition:all .5s;
+}
+.introduce .widthtwo .top_posi .another{
+    float:left;
+    position:relative;
+    top:100px;
+    width:200px;
+    height:400px;
+    font-size:24px;
+    font-weight:900;
+    color:#fff;
+    text-align:center;
+    margin-top:30px;
+    margin-left:30px;
+    margin-right:30px;
+}
+.introduce .widthtwo .top_posi .another img{
+    margin-left:-9px;
+    margin-bottom:20px;
+    transition:all .5s;
+}
+.introduce .widthtwo .top_posi .another img:hover{
+    transform:rotate(10deg);
+    transition:all .5s;
+}
+.introduce .widthtwo .top_posi .another span{
+    font-size:14px;
+    font-weight:900;
+    font-family:'맑은 고딕';
+    color:#ddd;
+}
+.circle{
+    position:absolute;
+    float:left;
+    width:220px;
+    height:220px;
+    border:15px solid #fff;
+    border-radius:50%;
+}
+.circle p{
+    margin-top:60px;
+    font-size:50px;
+    font-weight:900;
+    color:#fff;
+}
+.slickslide{
+    width:100%;
+    height:100%;
+    background:#333;
+    margin:0 auto;
+    margin-top:-30px;
+}
+.slick-prev .slick-arrow{
+    display:none;
+}
+.designposition{
+    width:100%;
+    height:100%;
+    margin:0 auto;
+}
+.designposition span{
+    line-height:4;
+    color:#555;
+}
+.designposition p{
+    text-align:center;
+    line-height:2;
+}
+.designposition img{
+    width:100%;
+    margin:0 auto;
+    margin-top:1%;
+}
+.designposition .topbold{
+    font-size:20px;
+}
+.designposition .fontsize{
+    font-size:14px;
+}
+.artbox{
+    width:100%;
+    height:100%;
+}
+.artboxjqu{
+    width:100%;
+    height:100%;
+    padding:5%;
+    margin:0 auto;
+}
+.artbox ul{
+    
+}
+.artbox ul li{
+    float:left;
+    overflow:hidden;
+    position:relative;
+    width:293px;
+    height:293px;
+}
+.artbox ul li a::after{
+    content:"";
+    display:none;
+    position:absolute;
+    top:0;
+    left:0;
+    width:293px;
+    height:293px;
+    background:url(../images/artimghover.png);
+    z-index:1;
+    /* 껌뻑이는 요소가 있을때는 z인덱스 값을 동등하게 할것. */
+}
+.artbox ul li img{
+    width:293px;
+    height:293px;
+    transition:all .5s;
+}
+.artbox ul li:hover img{
+    transform:scale(1.05, 1.05);
+}
+.artbox ul li:hover a::after{
+    display:block;
+}
+/* .artbox ul li:nth-child(4n+1){
+   clear:both;
+} */
+.slide p{
+    position:absolute;
+    top:0;
+    width:500px;
+    font-size:35px;
+    color:#fff;
+    font-family:'맑은 고딕';
+    font-weight:900;
+    opacity:0;
+    transition:all .5s;
+    border:2px solid #fff;
+    padding:10px
+}
+.slide .posi_pone{
+    left:680px;
+}
+.slide .posi_ptwo{
+    left:2600px;
+}
+.fp-controlArrow.fp-next{
+    right:200px!important;
+}
+.fp-controlArrow.fp-prev{
+    left:200px!important;
+}
+.introduce ul{
+    
+}
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+.fullscreen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:1920px;
+    height:auto;
+}
+/* Introduce 자기소개 부분 */
+.footer{
+
+}
