@@ -64,6 +64,7 @@ $(document).ready(function(){
 		fade: true,
 		pauseOnHover:false
 	});
+	/*
 	$('.introduce').slick({
 		infinite: true,
 		slidesToShow: 1,
@@ -81,12 +82,28 @@ $(document).ready(function(){
 		$('.show').hide()
 		$('.hide').show()
 	})
+	이력서 부분인데 이 부분은 아직 보류
+	*/
 	$('.slickslide').slick({
 		infinite: true,
 		slidesToShow: 3,
 		slidesToScroll: 3,
 		dots:true,
 		dotsClass: 'slick-dots',
+		responsive: [
+		{
+			breakpoint: 1024,
+			settings: {
+			slidesToShow: 2,
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+			slidesToShow: 1
+			}
+		}
+		]
 	});
 	$('.artbox').slick({
 		
@@ -94,9 +111,9 @@ $(document).ready(function(){
 
 	/* FullPage */
 	$('#page').fullpage({
-		navigation: true,
+		navigation:true,
 		slidesNavigation: true,
-		verticalCentered: false,
+		verticalCentered:false,
 		licenseKey:"OPEN-SOURCE-GPLV3-LICENSE",
 		css3:false,
 		menu: '#menu',
