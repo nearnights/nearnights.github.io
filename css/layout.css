@@ -1,3 +1,4 @@
+/* 헤더부분 리스트 및 ui */
 .header{
     width:100%;
 }
@@ -9,7 +10,7 @@
     z-index:1001;
     opacity:0.9;
 }
-.headlist/* max-width 1280px */{
+.headlist{
     width:1200px;
     height:50px;
     margin:0 auto;
@@ -59,6 +60,8 @@
     transition:all 1s;
 }
 /* 헤더부분 리스트 및 ui */
+
+/* 백그라운드 부분 */
 .back_one,
 .back_two,
 .back_three,
@@ -91,6 +94,8 @@
     padding: 6% 0 0 0;
 }
 /* 백그라운드 부분 */
+
+/* back_one 부분 첫번째 페이지 */
 #fp-nav ul li a span, .fp-slidesNav ul li a span{
     background:#fff!important;
 }
@@ -109,9 +114,6 @@
     transform:translate(-50%, -50%);
     border-radius:10px;
     z-index:101;
-}
-.container .width .move p{
-
 }
 .container .width .move .spacing span{
     font-size:4vw;
@@ -164,7 +166,9 @@
 .fade .slick-next{
     display:none!important;
 }
-/* 포트폴리오 인트로 부분 */
+/* back_one 부분 첫번째 페이지 */
+
+/* back_two 부분 두번째 페이지 */
 .introduce{
     width:85%;
     margin:0 auto;
@@ -225,6 +229,8 @@
     color:#ddd;
 }
 /* back_two 부분 두번째 페이지 */
+
+/* back_three 부분 세번째 페이지 */
 .designwidth{
     position:relative;
     top:19.4%;
@@ -363,6 +369,8 @@
     transition:all .5s;
 }
 /* back_three 부분 세번째 페이지 */
+
+/* back_four 부분 네번째 페이지 */
 .bold{
     position:relative;
     top:-10px;
@@ -415,7 +423,7 @@
     height:100%;
     margin-top:20px;
 }
-.hi .website .widthmeet img /*max-width 1280px */{
+.hi .website .widthmeet img{
     position:relative;
     width:400px;
     top:-10px;
@@ -426,6 +434,8 @@
     transition:all .5s;
 }
 /* back_four 부분 네번째 페이지 */
+
+/* back_five 부분 다섯번째 페이지 */
 .artbox{
     width:1210px;
     height:100%;
@@ -504,87 +514,13 @@
     right:-60px;
 }
 /* back_five 부분 다섯번째 페이지 */
-.fullscreen-bg {
-    position:fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -100;
-}
-.auto{
-    position:absolute;
-    top: 0;
-    left: 0;
-    width:2000px;
-    height:auto;
-}
-.background{
-    position:relative;
-    width:100%;
-    height:100%;
-    margin:0 auto;
-}
-.background p{
-    position:relative;
-    width:600px;
-    height:100px;
-    font-size:50px;
-    font-weight:900;
-    padding:10px;
-    color:#fff;
-    z-index:101;
-    top:15%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    opacity:.1;
-}
-.background p:after{
-    content:"";
-    position:absolute;
-    width:100px;
-    height:5px;
-    background:#fff;
-    top:100px;
-    left:42%;
-}
-.background .piano{
-    position:absolute;
-    width:255px;
-    height:255px;
-    top:53%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    transition:all .5s;
-    opacity:0;
-}
-.background .game{
-    position:absolute;
-    width:255px;
-    height:255px;
-    top:53%;
-    left:30%;
-    transform:translate(-50%,-50%);
-    transition:all .5s;
-    opacity:0;
-}
-.background .artdraw{
-    position:absolute;
-    width:255px;
-    height:255px;
-    top:53%;
-    left:70%;
-    transform:translate(-50%,-50%);
-    transition:all .5s;
-    opacity:0;
-}
-/* back_six 여섯번째 부분 */
+
 .footer{
 
 }
 
 /* Mobile Layout */
-.desktop .headerbox{
+.device .headerbox{
     position:fixed;
     width:100%;
     height:50px;
@@ -592,26 +528,26 @@
     z-index:1001;
     opacity:0.9;
 }
-.desktop .container{
+.device .container{
     height:auto;
 }
-.desktop .container .section{
+.device .container .section{
     position:relative;
     height:640px;
 }
-.desktop .container .section.back_two{
+.device .container .section.back_two{
     height:auto;
 }
-.desktop .container .section.back_five ~ .section{
+.device .container .section.back_five ~ .section{
     display:none;
 }
-.desktop .introduce .widthtwo .top_posi .one,
-.desktop .introduce .widthtwo .top_posi .two,
-.desktop .introduce .widthtwo .top_posi .three,
-.desktop .introduce .widthtwo .top_posi .four{
+.device .introduce .widthtwo .top_posi .one,
+.device .introduce .widthtwo .top_posi .two,
+.device .introduce .widthtwo .top_posi .three,
+.device .introduce .widthtwo .top_posi .four{
     opacity:1;
 }
-.desktop .designwidth .sizebold{
+.device .designwidth .sizebold{
     position:absolute;
     top:10%;
     left:50%;
@@ -622,7 +558,7 @@
     font-weight:900;
     opacity:1;
 }
-.desktop .slickslide{
+.device .slickslide{
     position:relative;
     width:1200px;
     height:400px;
@@ -631,73 +567,83 @@
     transform:translate(-50%, -25%);
     transition:all .5s;
 }
-.desktop .designposition{
+.device .designposition{
     display:inline-block;
     width:150px;
     margin:0;
 }
-.desktop .designposition .item{
+.device .designposition .item{
     width:150px;
     z-index:101;
     opacity:1;
     transition:all .5s;
 }
-.desktop .designposition .gray,
-.desktop .designposition span,
-.desktop .designposition .topbold,
-.desktop .designposition .fontsize,
-.desktop .designposition .designintro{
+.device .designposition .gray,
+.device .designposition span,
+.device .designposition .topbold,
+.device .designposition .fontsize,
+.device .designposition .designintro{
     display:none;
 }
-.desktop .container .bold{
+.device .container .bold{
     position:relative;
     width:100%;
     top:100px;
     opacity:1;
 }
-.desktop .container .hi{
+.device .container .hi{
     position:relative;
     top:80px;
     width:100%;
     opacity:1;
 }
-.desktop .hi .website .widthmeet img{
+.device .hi .website .widthmeet img{
     width:80%;
     transition:all .5s;
     opacity:1;
 }
-.desktop .hi .website p{
+.device .hi .website p{
     width:100%;
     opacity:.9;
 }
-.desktop .artbox{
+.device .artbox{
     width:100%;
     height:400px;
 }
-.desktop .artbox ul{
+.device .artbox ul{
     width:480px;
     height:100px;
 }
-.desktop .section:nth-child(5){
+.device .section:nth-child(5){
     height:850px;
 }
-.desktop .artboxjqu:nth-child(1){
+.device .artboxjqu:nth-child(1){
     margin-top:80px;
 }
-.desktop .artboxjqu{
+.device .artboxjqu{
     width:100%;
     height:80%;
     margin-top:40px;
 }
-.desktop .artbox ul li{
+.device .artbox ul li{
     width:120px;
     height:120px;
 }
-.desktop .artbox ul li img{
+.device .artbox ul li img{
     opacity:1;
 }
+.device .artbox .posi_pone{
+    width:50vw;
+    font-size:4vw;
+    font-weight:900;
+    border-bottom:.5vw solid #fff;
+    padding:10px;
+    color:#fff;
+    margin:0 auto;
+}
+/* Mobile Layout */
+
 @media(max-width:1440px){
-    /*  */
     .designwidth{
         top:23%;
     }
@@ -707,6 +653,7 @@
     /* max-width 1440 세번째 페이지 */
 }
 @media(max-width:1280px){
+    /* max-width 1280 fixed */
     .headlist{
         width:1024px;
         margin:0 auto;
@@ -716,7 +663,9 @@
         margin-right:20px;
     }
      /* max-width 1280 fixed */
-     .introduce{
+
+    /* max-width 1280 두번째 페이지 */
+    .introduce{
         width:85%;
         margin:0 auto;
     }
@@ -744,6 +693,8 @@
         transition:all .5s;
     }
     /* max-width 1280 두번째 페이지 */
+
+    /* max-width 1280 세번째 페이지 */
     .designwidth{
         top:19.4%;
     }
@@ -758,8 +709,8 @@
         transition:all .5;
     }
     /* max-width 1280 세번째 페이지 */
+
     /* max-width 1280 네번째 페이지 */
-    /* max-width 1280 다섯번째 페이지 */
     .hi .website .widthmeet{
         
     }
@@ -769,33 +720,36 @@
         padding-left:0;
         padding-right:0;
     }
+    /* max-width 1280 네번째 페이지 */
+
     /* device 1280 */
-    .desktop .introduce .widthtwo{
+    .device .introduce .widthtwo{
         width:100%;
     }
-    .desktop .hi{
+    .device .hi{
         height:auto;
     }
-    .desktop .hi .website{
+    .device .hi .website{
         height:50%;
         margin-top:80px;
     }
-    .desktop .hi .website .widthmeet{
-    
-    }
-    .desktop .bold{
+    .device .bold{
         top:34px;
         font-size:32px;
     }
-    .desktop .hi .website p{
+    .device .hi .website p{
         font-size:18px;
     }
+    /* device 1280 */
 }
 @media(max-width:1024px){
+    /* max-width 1024 fixed */
     .headlist{
         width:760px;
     }
     /* max-width 1024 fixed */
+
+    /* max-width 1024 첫번째 페이지 */
     .container .width .move .spacing span{
         font-size:5vw;
     }
@@ -805,7 +759,8 @@
         padding:6px;
     }
     /* max-width 1024 첫번째 페이지 */
-    /* max-width 1024 두번째 페이지 */
+
+    /* max-width 1024 세번째 페이지 */
     .designwidth{
         top:22.5%;
     }
@@ -823,11 +778,9 @@
         transition:all .5;
     }
     /* max-width 1024 세번째 페이지 */
-    /* max-width 1024 네번째 페이지 */
-    /* max-width 1024 다번째 페이지 */
-    /* max-width 1024 여섯번째 페이지 */
 }
 @media(max-width:880px){
+    /* max-width 880 세번째 페이지 */
     .designwidth{
         top:25%;
     }
@@ -836,9 +789,10 @@
         width:68%;
         height:410px;
     }
-    /* max-width 1024 세번째 페이지 */
+    /* max-width 880 세번째 페이지 */
 }
 @media(max-width:768px){
+     /* max-width 768 fixed */
     .headerbox{
         overflow:hidden;
         height:50px;
@@ -903,7 +857,9 @@
         position:absolute;
         top:-9999em;
     }
-     /* max-width 768 fixed */
+    /* max-width 768 fixed */
+
+    /* max-width 768 첫번째 페이지 */
     .container .width .move .spacing span{
         font-size:6vw;
     }
@@ -913,8 +869,8 @@
         padding:7px;
     }
     /* max-width 768 첫번째 페이지 */
-    .introduce{
-    }
+
+    /* max-width 768 두번째 페이지 */
     .introduce .widthtwo{
         width:830px;
         height:750px;
@@ -951,6 +907,8 @@
         font-size:14px;
     }
     /* max-width 768 두번째 페이지 */
+
+    /* max-width 768 세번째 페이지 */
     .designwidth{
         top:18%;
     }
@@ -967,14 +925,9 @@
         font-size:32px;
     }
     /* max-width 768 세번째 페이지 */
-    /* max-width 768 네번째 페이지 */
-    /* max-width 768 다번째 페이지 */
-    /* max-width 768 여섯번째 페이지 */
 }
 @media(max-width:640px){
-    /* max-width 640 fixed */
-
-    /* max-width 640 첫번째 페이지 */
+    /* max-width 640 두번째 페이지 */
     .introduce .widthtwo{
         width:640px;
         height:750px;
@@ -1005,6 +958,8 @@
         height:180px;
     }
     /* max-width 640 두번째 페이지 */
+
+    /* max-width 640 세번째 페이지 */
     .designwidth{
         top:21%;
     }
@@ -1013,24 +968,24 @@
         width:100%;
         height:450px;
     }
-    .desktop .slickslide .item{
+    /* max-width 640 세번째 페이지 */
+
+    /* device 640 */
+    .device .slickslide .item{
         width:103%;
     }
-    .desktop .slickslide{
+    .device .slickslide{
         width:80%;
     }
-    .desktop .designwidth{
+    .device .designwidth{
         top:19%;
         width:60%;
     }
-    .desktop .designwidth .sizebold{
+    .device .designwidth .sizebold{
         display:block;
         width:200px;
     }
-    /* max-width 640 세번째 페이지 */
-    /* max-width 640 네번째 페이지 */
-    /* max-width 640 다번째 페이지 */
-    /* max-width 640 여섯번째 페이지 */
+    /* device 640 */
 
 }
 @media(max-width:592px){
@@ -1052,8 +1007,10 @@
     .desktop .designposition{
         width:140px;
     }
+    /* divice 592 another */
 }
 @media(max-width:480px){
+    /* max-width 480 fixed */
     .headlist{
         width:100vw;
     }
@@ -1110,6 +1067,8 @@
         float:left;
     }
     /* max-width 480 fixed */
+
+    /* max-width 480 첫번째 페이지 */
     .container .width .move .spacing span{
         font-size:7vw;
     }
@@ -1120,6 +1079,8 @@
         margin-top:6px;
     }
     /* max-width 480 첫번째 페이지 */
+
+    /* max-width 480 두번째 페이지 */
     .introduce .widthtwo{
         width:480px;
     }
@@ -1145,6 +1106,8 @@
         font-size:11px;
     }
     /* max-width 480 두번째 페이지 */
+
+    /* max-width 480 세번째 페이지 */
     .designwidth{
         top:26%;
     }
@@ -1153,9 +1116,6 @@
         height:450px;
     }
     /* max-width 480 세번째 페이지 */
-    /* max-width 480 네번째 페이지 */
-    /* max-width 480 다번째 페이지 */
-    /* max-width 480 여섯번째 페이지 */
 
     /* divice 480 */
     .desktop .slickslide .item{
@@ -1183,17 +1143,32 @@
         width:85px;
         height:85px;
     }
+    /* divice 480 */
 }
 @media(max-width:456px){
+    /* divice 456 */
     .desktop .container .section:nth-child(3){
         height:800px;
     }
     .desktop .slickslide{
         top:36%;
     }
+    /* divice 456 */
+}
+@media(max-width:360px){
+    /* divice 360 */
+    .desktop .artbox ul{
+        width:320px;
+        height:100px;
+    }
+    .desktop .artbox ul li{
+        width:80px;
+        height:80px;
+    }
+    /* divice 360 */
 }
 @media(max-width:320px){
-    /* max-width 320 fixed */
+    /* max-width 320 첫번째 페이지 */
     .container .width .move .spacing span{
         font-size:7vw;
         line-height:1.5;
@@ -1205,6 +1180,8 @@
         line-height:1.5;
     }
     /* max-width 320 첫번째 페이지 */
+
+    /* max-width 320 두번째 페이지 */
     .introduce .widthtwo{
         width:320px;
     }
@@ -1233,6 +1210,8 @@
         line-height:1;
     }
     /* max-width 320 두번째 페이지 */
+
+    /* max-width 320 세번째 페이지 */
     .designwidth{
         top:26%;
     }
@@ -1241,9 +1220,6 @@
         top:46%;
     }
     /* max-width 320 세번째 페이지 */
-    /* max-width 320 네번째 페이지 */
-    /* max-width 320 다번째 페이지 */
-    /* max-width 320 여섯번째 페이지 */
 
     /* divice 320 */
     .desktop .slickslide{
@@ -1252,4 +1228,5 @@
     .desktop .hi{
         height:300px;
     }
+    /* divice 320 */
 }
