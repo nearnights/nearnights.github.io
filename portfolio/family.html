@@ -1,0 +1,247 @@
+
+	<!-- family -->
+	<article class="content family_area">
+		<style>
+			.designwidth{
+				width:100%;
+				height:830px;
+				margin:0 auto;
+				padding-top:200px;
+			}
+			.designwidth .sizebold{
+				text-align:center;
+				font-size:6vw;
+				line-height:2.5;
+				color:#333;
+				clear:both;
+			}
+			.designwidth .btn{
+				position:fixed;
+				text-indent:-9999em;
+				left:50%;
+				transform:translate(-50%, -50%);
+				width:25px;
+				height:25px;
+				border:0;
+				border-right:5px solid #333;
+				border-bottom:5px solid #333;
+				border-radius:2px;
+				transform:rotate(45deg);
+				animation:move 1s ease-in infinite;
+				background:rgba(0, 0, 0, 0);
+			}
+			@keyframes move{
+				0%{
+					top:93%
+				}
+				50%{
+					top:95%
+				}
+				100%{
+					top:93%
+				}
+			}
+			.designposition{
+				width:100%;
+			}
+			.designposition .item{
+				float:left;
+				clear:both;
+				opacity:0;
+				margin-top:-10px;
+			}
+			.designposition .item2{
+				float:right;
+				clear:both;
+				opacity:0;
+				margin-top:-10px;
+			}
+			.designposition .gray{
+				float:left;
+				width:50vw;
+				padding:5%;
+				margin-top:6%;
+				margin-left:20px;
+			}
+			.designposition span{
+				float:left;
+				color:#333;
+				font-size:20px;
+				font-weight:600;
+				line-height:2;
+			}
+			.designposition .topbold{
+				opacity:0;
+				font-size:8vw;
+			}
+			
+			.designposition .fontsize{
+				margin-left:8px;
+				clear:both;
+			}
+			.designposition .designintro{
+				text-align:left;
+				font-weight:400;
+				margin-left:20px;
+			}
+			@media(max-width:1440px){
+				.designposition .gray{
+					margin-top:18.5%;
+					width:45vw;
+					padding:3%;
+					padding-left:5%;
+				}
+				.designposition span{
+					font-size:18px;
+				}
+				.designposition .topbold{
+					font-size:5vw;
+				}
+			}
+			@media(max-width:1240px){
+				.designposition .item{
+					width:50%;
+				}
+				.designposition .item2{
+					width:50%;
+				}
+				.designposition .gray{
+					width:40vw;
+				}
+				.designposition span{
+					font-size:15px;
+				}
+				.designposition .topbold{
+					font-size:4vw;
+				}
+			}
+			@media(max-width:1024px){
+				.designwidth .sizebold{
+					font-size:8vw;
+				}
+			}
+			@media(max-width:768px){
+				.designwidth .sizebold{
+					font-size:10vw;
+				}
+				.designposition .item{
+					width:100%;
+				}
+				.designposition .item2{
+					width:100%;
+				}
+				.designposition .gray{
+					width:100%;
+					padding:8%;
+					margin:0 auto;
+				}
+				.designposition span{
+					float:none;
+				}
+				.designposition .fontsize{
+					margin:0 auto;
+				}
+				.designposition .designintro{
+					text-align:center;
+					margin-left:0;
+				}
+			}
+		</style>
+		<script>
+			$(document).ready(function(){
+				$(window).scroll(function () {
+					if ($('html, body').scrollTop() > 878) {
+						$('.active1').stop().animate({opacity:1,marginTop:0});
+						$('.opacity1').delay(300).animate({opacity:1})
+					}
+					if ($('html, body').scrollTop() > 1628) {
+						$('.active2').stop().animate({opacity:1,marginTop:0});
+						$('.opacity2').delay(300).animate({opacity:1})
+					}
+					if ($('html, body').scrollTop() > 2478) {
+						$('.active3').stop().animate({opacity:1,marginTop:0});
+						$('.opacity3').delay(300).animate({opacity:1})
+					}
+					if ($('html, body').scrollTop() > 3228) {
+						$('.active4').stop().animate({opacity:1,marginTop:0});
+						$('.opacity4').delay(300).animate({opacity:1})
+					}
+					if ($('html, body').scrollTop() > 4028) {
+						$('.active5').stop().animate({opacity:1,marginTop:0});
+						$('.opacity5').delay(300).animate({opacity:1})
+						$('.btn').stop().animate({opacity:1},100)
+					}
+					if ($('html, body').scrollTop() > 4828) {
+						$('.active6').stop().animate({opacity:1,marginTop:0});
+						$('.opacity6').delay(300).animate({opacity:1})
+						$('.btn').stop().animate({opacity:0},100)
+					}
+				});
+			})
+		</script>
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<div class="section back_three">
+			<div class="designwidth">
+				<span class="sizebold">My Design</span>
+				<button class="btn">scrollbutton</button>
+			</div>
+			<div class="widthposition">
+				<div class="designposition one_e">
+					<img src="img/design.png" alt="" class="item active1">
+					<div class="gray move1">
+						<span class="topbold opacity1">PACKAGE<br></span>
+						<span class="fontsize">패키지 디자인, 수정테이프 '화이트'<br></span>
+						<span class="designintro">디자인 컨셉은 수정테이프 안에 있는 부속품으로 톱니바퀴를
+							이용해 패턴을 만들었고, 서체는 윤고딕 320 및 색상은 수정액과 같은 파란색 색상 계열로 맞췄다.</span>
+					</div>
+				</div>
+				<div class="designposition two_e">
+					<img src="img/design2.png" alt="" class="item2 active2">
+					<div class="gray move2">
+						<span class="topbold opacity2">ADVERTISE<br></span>
+						<span class="fontsize">광고디자인 , 코엑스 서울 국제 도서전<br></span>
+						<span class="designintro">코엑스에서 하는 제 22회 서울 국제 도서전 포스터 리디자인이며 영문글자
+							에 타이포를 넣었고, 날짜 정보, 행사소개의 정보가 들어가 있습니다. 아래 이미지에는 책의 일러스트를 넣어 포스터 다운 느낌을 주었다.</span>
+					</div>
+				</div>
+				<div class="designposition three_e">
+					<img src="img/design3.png" alt="" class="item active3">
+					<div class="gray move3">
+						<span class="topbold opacity3">ADITORIAL<br></span>
+						<span class="fontsize">에디토리얼 , 잡지 리디자인 LUEL<br></span>
+						<span class="designintro">잡지 하나를 선정을 한 뒤에 새롭게 그리드 시스템 재배치,
+							타이포그라피 리설정 등 리디자인 하는 컨셉으로 잡았다. 이 잡지(2016년 루엘 4월호)를 선정한 이유는 
+							디자인에 관한 이야기나 먹을거리 등 관심분야가 많아서 선정을 하였다.</span>
+					</div>
+				</div>
+				<div class="designposition one_e">
+					<img src="img/design4.png" alt="" class="item2 active4">
+					<div class="gray move4">
+						<span class="topbold opacity4">MODELING<br></span>
+						<span class="fontsize">3D 모델링, 텀블러 디자인<br></span>
+						<span class="designintro">물건 하나를 정해서 비슷하게 리디자인 하는 형식으로 나아갔다. 
+							기존 머그컵의 두배의 크기에 잘린 원뿔형 역삼각형 모양으로 만들었고 
+							뚜껑은 열고 닫을 수 있고 또는 그대로 열려있는 구멍에 따라 마실 수가 있다..</span>
+					</div>
+				</div>
+				<div class="designposition two_e">
+					<img src="img/design5.png" alt="" class="item active5">
+					<div class="gray move5">
+						<span class="topbold opacity5">UI / UX<br></span>
+						<span class="fontsize">UI / UX , 만능노트 Life Note<br></span>
+						<span class="designintro">이 어플리케이션의 컨셉은 모든 사람들이 편하게 쓸 수 있는 필기장이다, 
+							필기장이면서 메모장인데, 단순한 메모장이 아닌 여러가지 기능들도 포함되어있고 다양한 폰트들, 축약된 포토샵 컨셉으로 만들었다.</span>
+					</div>
+				</div>
+				<div class="designposition three_e">
+					<img src="img/design6.png" alt="" class="item2 active6">
+					<div class="gray move6">
+						<span class="topbold opacity6">LOGODESIGN<br></span>
+						<span class="fontsize">브랜드디자인 , aldocoffee<br></span>
+						<span class="designintro">동글동글한 서체의 컨셉으로 잡았고 별모양의 심볼을 넣어 만들었으며 색상은 원두색상으로 하였고, 사진의 컵은 어떤 느낌인지 보기 위하여 만들었다.</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</article>
+
