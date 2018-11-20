@@ -1,0 +1,751 @@
+body.pc{
+	padding-top:100px;
+}
+/* Home */
+.home_area{
+	height:100%;
+	margin-top:0;
+	text-align:center;
+	font-size:50px;
+}
+.back_one{
+	/* height:100%;
+	padding:0;
+	background-image:url(/new/img/backgroundphoto.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+	background-position:50% 50%; */
+}
+.back_one .width{
+	position:fixed;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+}
+.fade{
+    height:100%;
+}
+.fade .slick-list,
+.fade .slick-track{
+    height:100%;
+}
+.fade .slick-slide{
+    width:1920px;
+    height:100%;
+    padding: 6% 0 0 0;
+    background-position:50% 50%;
+    background-repeat:no-repeat;
+    background-size:1920px 969px;
+}
+.fade .photo{
+    background-image:url(/new/img/backgroundphoto.png);
+}
+.fade .photo1{
+    background-image:url(/new/img/backgroundphotovideo.jpg);
+}
+.fade .photo2{
+    background-image:url(/new/img/backgroundphotovideo2.jpg);
+}
+.fade .photo3{
+    background-image:url(/new/img/backgroundphotovideo3.jpg);
+}
+.fade .slick-prev,
+.fade .slick-next{
+    display:none!important;
+}
+.back_one .move{
+	/* position:fixed;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%); */
+	border-radius:10px;
+}
+.back_one .width .move .spacing{
+	font-size:3vw;
+	font-weight:900;
+	font-family: 'Poiret One', cursive;
+	color:#fff;
+	text-align:center;
+	padding:5px;
+	letter-spacing:5px;
+	transition:all .5s;
+}
+.back_one .width .move .spacingtwo{
+	font-size:4vw;
+	font-weight:900;
+	font-family: 'Poiret One', cursive;
+	color:#fff;
+	text-align:center;
+	padding:5px;
+	letter-spacing:5px;
+	transition:all .5s;
+}
+/* Home */
+
+/* Skill */
+.study_area{
+	/* padding-top:50px; */
+}
+.back_two{
+	background-image:url(/new//img/backgroundphoto2.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+	background-position:50% 50%;
+}
+.introduce{
+	width:85%;
+	margin:0 auto;
+}
+.introduce .widthtwo{
+
+}
+.introduce .widthtwo .top_posi{
+	position:fixed;
+	width:1050px;
+	height:200px;
+	top:33%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+.introduce .widthtwo .top_posi .another{
+	float:left;
+	width:200px;
+	height:400px;
+	font-size:24px;
+	font-weight:600;
+	color:#fff;
+	text-align:center;
+	margin-top:80px;
+	margin-left:30px;
+	margin-right:30px;
+	line-height:26px;
+}
+.introduce .widthtwo .top_posi .another img{
+	margin-left:-9px;
+	margin-bottom:20px;
+}
+.introduce .widthtwo .top_posi .another img:hover{
+	transform:rotate(10deg);
+}
+.introduce .widthtwo .top_posi .another span{
+	font-size:14px;
+	font-weight:900;
+	font-family:'맑은 고딕';
+	color:#ddd;
+}
+/* Skill */
+
+/* design */
+.family_area{
+	height:6461px;
+	background:linear-gradient(180deg, #ddd 50%, #f5f5f5 50%);
+	background-size:1920px 1847.1px;
+	background-repeat:repeat;
+	padding-top:245px;
+}
+.designwidth{
+	width:100%;
+	height:735px;
+	margin:0 auto;
+}
+.designwidth .sizebold{
+	text-align:center;
+	font-size:6vw;
+	line-height:2.5;
+	color:#333;
+	clear:both;
+}
+.designwidth .btn{
+	position:fixed;
+	text-indent:-9999em;
+	left:50%;
+	transform:translate(-50%, -50%);
+	width:25px;
+	height:25px;
+	border:0;
+	border-right:5px solid #333;
+	border-bottom:5px solid #333;
+	border-radius:2px;
+	transform:rotate(45deg);
+	animation:move 1s ease-in infinite;
+	background:rgba(0, 0, 0, 0);
+}
+@keyframes move{
+	0%{
+		top:85%
+	}
+	50%{
+		top:88%
+	}
+	100%{
+		top:85%
+	}
+}
+.designposition{
+	width:100%;
+}
+.designposition .item{
+	float:left;
+	clear:both;
+	opacity:0;
+	margin-top:10px;
+}
+.designposition .active1{
+	margin-top:-45px;
+}
+.designposition .item2{
+	float:right;
+	clear:both;
+	opacity:0;
+	margin-top:10px;
+}
+.designposition .gray{
+	float:left;
+	width:50vw;
+	padding:5%;
+	margin-top:6%;
+	margin-left:20px;
+}
+.designposition span{
+	float:left;
+	color:#333;
+	font-size:20px;
+	font-weight:600;
+	line-height:2;
+}
+.designposition .topbold{
+	opacity:0;
+	font-size:8vw;
+}
+.designposition .fontsize{
+	margin-left:8px;
+	clear:both;
+}
+.designposition .designintro{
+	text-align:left;
+	font-weight:400;
+	margin-left:20px;
+}
+/* design */
+/* Art */
+.work_area{
+	height:1647px;
+	background:linear-gradient(180deg, #ddd 50%, #f5f5f5 50%);
+	background-position:50%, 50%;
+	background-size:1920px 1647.1px;
+}
+.back_five{
+	padding-bottom:5%;
+}
+.artbox{
+	clear:both;
+	width:1210px;
+	height:850px;
+	margin:0 auto;
+}
+.artbox .artboxjqu{
+	width:100%;
+	height:100%;
+}
+.artbox .posi_pone{
+	font-size:3vw;
+	padding:5%;
+	padding-top:70px;
+	color:#333;
+}
+.artbox .posi_ptwo{
+	font-size:3vw;
+	padding:5%;
+	padding-top:10%;
+	color:#333;
+}
+.artbox ul{
+	width:1175px;
+	height:auto;
+	margin:0 auto;
+}
+.artbox ul li{
+	float:left;
+	overflow:hidden;
+	position:relative;
+	width:293px;
+	height:293px;
+}
+.artbox ul li a::after{
+	content:"";
+	display:none;
+	position:absolute;
+	top:0;
+	left:0;
+	width:293px;
+	height:293px;
+	background:url(/new//img/artimghover.png);
+	background-position:50%, 50%;
+	background-size:100%, 100%;
+	z-index:1;
+	/* 껌뻑이는 요소가 있을때는 z인덱스 값을 동등하게 할것. */
+}
+.artbox ul li img{
+	width:100%;
+	height:100%;
+	transition:all .3s;
+}
+.artbox ul li:hover img{
+	transform:scale(1.05, 1.05);
+}
+.artbox ul li:hover a::after{
+	display:block;
+}
+/* .container{
+	padding-bottom:10%;
+} */
+/* Art */
+/* Site */
+.bold{
+    position:relative;
+    top:-10px;
+    width:100%;
+    height:60px;
+    font-size:4vw;
+    font-weight:900;
+    color:#333;
+    margin:0 auto;
+	margin-top:20px;
+	padding-top:50px;
+}
+.hi{
+    width:100%;
+	height:100%;
+	padding:5%;
+    margin:0 auto;
+}
+.hi .website{
+    float:left;
+    width:33.333333333333333%;
+    height:70%;
+	margin-top:50px;
+	padding-top:20px;
+}
+.hi .website p{
+    position:relative;
+    top:-10px;
+    width:200px;
+    height:30px;
+    font-size:23px;
+    font-weight:600;
+    font-family:sans-serif;
+    color:#333;
+    margin:0 auto;
+    margin-top:20px;
+	letter-spacing:1px;
+	padding-top:20px;
+}
+.hi p:after{
+    content:"";
+    position:absolute;
+    width:30px;
+    border-top:4px solid #ab1;
+    left:42.5%;
+    top:70px;
+    transform:translate(-50% -50%);
+}
+.hi .website .widthmeet{
+    width:100%;
+    height:100%;
+	margin-top:20px;
+	padding-top:20px;
+}
+.hi .website .widthmeet img{
+    position:relative;
+    width:100%;
+    top:-10px;
+    margin-top:20px;
+    padding-left:10px;
+    padding-right:10px;
+	transition:all .5s;
+	padding-top:20px;
+}
+/* Site */
+
+/* meidaquery */
+@media(max-width:1440px){
+	/* Design */
+	.designposition .gray{
+		margin-top:18.5%;
+		width:45vw;
+		padding:3%;
+		padding-left:5%;
+	}
+	.designposition span{
+		font-size:18px;
+	}
+	.designposition .topbold{
+		font-size:5vw;
+	}
+	/* Design */
+}
+@media(max-width:1280px){
+	/* Skill */
+	.introduce{
+		width:85%;
+	}
+	.introduce .widthtwo .top_posi{
+		width:890px;
+		top:43%;
+	}
+	.introduce .widthtwo .top_posi .another{
+		height:300px;
+		margin-left:10px;
+		margin-right:10px;
+	}
+	.introduce .widthtwo .top_posi .another img{
+		width:180px;
+		height:180px;
+		margin:0 auto;
+		margin-bottom:20px;
+	}
+	/* Skill */
+}
+@media(max-width:1240px){
+	/* Design */
+	.family_area{
+		height:100%;
+		background:#f5f5f5;
+	}
+	.designwidth .btn{
+		position:absolute;
+		top:88%;
+		animation:move 1s ease-in infinite;
+	}
+	.designposition .item{
+		width:50%;
+	}
+	.designposition .item2{
+		width:50%;
+	}
+	.designposition .gray{
+		width:40vw;
+	}
+	.designposition span{
+		font-size:15px;
+	}
+	.designposition .topbold{
+		font-size:4vw;
+	}
+	/* Design */
+	/* Art */
+	.back_five{
+		padding:7%;
+	}
+	.artbox{
+		clear:both;
+		width:100%;
+		height:800px;
+		margin:0 auto;
+	}
+	.artbox .artboxjqu{
+		width:100%;
+	}
+	.artbox .posi_pone{
+		font-size:3vw;
+		padding-top:5%;
+		color:#333;
+	}
+	.artbox .posi_ptwo{
+		padding-top:10%;
+	}
+	.artbox ul{
+		width:100%;
+		height:auto;
+		margin:0 auto;
+	}
+	.artbox ul li{
+		width:25%;
+		height:25%;
+	}
+	.artbox ul li a::after{
+		content:"";
+		width:100%;
+		height:100%;
+		/* 껌뻑이는 요소가 있을때는 z인덱스 값을 동등하게 할것. */
+	}
+	.artbox ul li img{
+		width:100%;
+		height:100%;
+		transition:all .3s;
+	}
+	.artbox ul li:hover img{
+		transform:scale(1.05, 1.05);
+	}
+	.artbox ul li:hover a::after{
+		display:block;
+	}
+	/* Art */
+}
+@media(max-width:1024px){
+	/* Design */
+	.designwidth .sizebold{
+		font-size:8vw;
+	}
+	.designposition .item{
+		opacity:1;
+	}
+	.designposition .item2{
+		opacity:1;
+	}
+	.designposition .topbold{
+		opacity:1;
+	}
+	/* Design */
+	/* Art */
+	.work_area{
+		height:1347px;
+		background:linear-gradient(180deg, #ddd 50%, #f5f5f5 50%);
+		background-position:50%, 50%;
+		background-size:1920px 1347.1px;
+	}
+	.back_five{
+		padding-top:3%;
+	}
+	.artbox{
+		height:600px;
+	}
+	.artbox .posi_pone{
+		padding-top:75px;
+	}
+	.artbox .posi_ptwo{
+		padding-top:20%;
+	}
+	/* Art */
+}
+@media(max-width:768px){
+	/* Skill */
+	
+	.introduce .widthtwo .top_posi{
+		position:fixed;
+		top:63%;
+		width:440px;
+		height:750px;
+	}
+	.introduce .widthtwo .top_posi .another{
+		width:200px;
+		height:310px;
+		font-size:20px;
+		margin:0 auto;
+		margin-top:0;
+		line-height:23px;
+	}
+	.introduce .widthtwo .top_posi .two,
+	.introduce .widthtwo .top_posi .four{
+		margin-left:30px;
+	}
+	.introduce .widthtwo .top_posi .another img{
+		width:180px;
+		height:180px;
+	}
+	.introduce .widthtwo .top_posi .another span{
+		font-size:12px;
+	}
+	/* Skill */
+	/* Design */
+	.designwidth .sizebold{
+		font-size:10vw;
+	}
+	.designposition .item{
+		width:100%;
+	}
+	.designposition .item2{
+		width:100%;
+	}
+	.designposition .gray{
+		width:100%;
+		padding:8%;
+		margin:0 auto;
+	}
+	.designposition span{
+		float:none;
+	}
+	.designposition .fontsize{
+		margin:0 auto;
+	}
+	.designposition .designintro{
+		text-align:center;
+		margin-left:0;
+	}
+	/* Design */
+	/* Art */
+	.work_area{
+		height:203vw;
+		background:#ddd;
+	}
+	.back_five{
+		width:100%;
+		padding:10%;
+		padding-top:0;
+		padding-bottom:0;
+	}
+	
+	.artbox{
+		width:100%;
+		height:100%;
+	}
+	.artbox ul li{
+		width:50%;
+		height:50%;
+	}
+	.artbox ul li:nth-child(7),
+	.artbox ul li:nth-child(8){
+		margin-bottom:50px;
+	}
+	.artbox ul li:hover img{
+		transform:none;
+	}
+	.artbox ul li:hover a::after{
+		display:none;
+	}
+	.artbox .posi_pone{
+		font-size:5vw;
+		padding:10%;
+		padding-top:20%;
+	}
+	.artbox .posi_ptwo{
+		font-size:5vw;
+		padding:10%;
+		padding-top:30%;
+	}
+	/* Art */
+}
+@media(max-width:720px){
+	body.mb{
+		padding-top:50px;
+	}
+	/* Home */
+	.home_area {
+		/* padding-top:50px; */
+	}
+	.back_one{
+		/* padding:926px 0 0 0; */
+	}
+	.back_one .width .move .spacing{
+		width:500px;
+		font-size:7vw;
+	}
+	.back_one .width .move .spacingtwo{
+		font-size:9vw;
+	}
+	/* Home */
+}
+@media(max-width:640px){
+	body.mb{
+		padding-top:50px;
+	}
+	/* Home */
+	.home_area{
+		/* padding-top:50px; */
+	}
+	.fade{
+		height:0;
+	}
+	.slick-slider{
+		
+	}
+	.back_one{
+		background-image:url(/new/img/backgroundphoto_small1.png);
+		background-size:640px 768px;
+		padding:740px 0 0 0;
+	}
+	/* Home */
+	/* Skill */
+	.study_area{
+		padding-top:0;
+	}
+	.back_two{
+		background-image:url(/new/img/backgroundphoto_small2.png);
+		background-size:640px 768px;
+		padding:740px 0 0 0;
+	}
+	/* Skill */
+	/* Art */
+	.artbox{
+		height:600px;
+	}
+	/* Art */
+}
+@media(max-width:480px){
+	/* Skill */
+	.introduce .widthtwo{
+		width:480px;
+	}
+	.introduce .widthtwo .top_posi{
+		width:310px;
+		height:620px;
+	}
+	.introduce .widthtwo .top_posi .another{
+		width:140px;
+		height:260px;
+		font-size:20px;
+		margin:0 auto;
+		line-height:20px;
+	}
+	.introduce .widthtwo .top_posi .another:nth-child(1),
+	.introduce .widthtwo .top_posi .another:nth-child(2){
+		margin-top:20px;
+	}
+	.introduce .widthtwo .top_posi .another:nth-child(3),
+	.introduce .widthtwo .top_posi .another:nth-child(4){
+		margin-top:-30px;
+	}
+	.introduce .widthtwo .top_posi .two,
+	.introduce .widthtwo .top_posi .four{
+		margin-left:30px;
+	}
+	.introduce .widthtwo .top_posi .another img{
+		width:130px;
+		height:130px;
+	}
+	.introduce .widthtwo .top_posi .another span{
+		font-size:11px;
+	}
+	/* Skill */
+}
+@media(max-width:320px){
+	/* Skill */
+	.introduce .widthtwo{
+		width:320px;
+	}
+	.introduce .widthtwo .top_posi{
+		width:280px;
+		height:520px;
+	}
+	.introduce .widthtwo .top_posi .another{
+		width:130px;
+		height:210px;
+		font-size:17px;
+		line-height:18px;
+		margin:0 auto;
+	}
+	.introduce .widthtwo .top_posi .two,
+	.introduce .widthtwo .top_posi .four{
+		margin-left:20px;
+	}
+	.introduce .widthtwo .top_posi .another img{
+		width:110px;
+		height:110px;
+		margin-bottom:10px;
+	}
+	.introduce .widthtwo .top_posi .another span{
+		font-size:9px;
+	}
+	.introduce .widthtwo .top_posi .another:nth-child(1),
+	.introduce .widthtwo .top_posi .another:nth-child(2){
+		margin-top:0;
+	}
+	.introduce .widthtwo .top_posi .another:nth-child(3),
+	.introduce .widthtwo .top_posi .another:nth-child(4){
+		margin-top:-10px;
+	}
+	/* Skill */
+}
+/* meidaquery */
