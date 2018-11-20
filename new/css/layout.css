@@ -231,10 +231,10 @@ body.pc{
 /* design */
 /* Art */
 .work_area{
-	height:1647px;
+	height:1651px;
 	background:linear-gradient(180deg, #ddd 50%, #f5f5f5 50%);
 	background-position:50%, 50%;
-	background-size:1920px 1647.1px;
+	background-size:1920px 1651x;
 }
 .back_five{
 	padding-bottom:5%;
@@ -258,7 +258,7 @@ body.pc{
 .artbox .posi_ptwo{
 	font-size:3vw;
 	padding:5%;
-	padding-top:10%;
+	padding-top:7%;
 	color:#333;
 }
 .artbox ul{
@@ -298,6 +298,17 @@ body.pc{
 .artbox ul li:hover a::after{
 	display:block;
 }
+/* SCROLL */
+::-webkit-scrollbar { width: 5px; }
+/* 스크롤바의 width */
+::-webkit-scrollbar-track { background-color: #f0f0f0; }
+/* 스크롤바의 전체 배경색 */
+::-webkit-scrollbar-thumb { 
+    background: linear-gradient(to bottom, #1697bf, #62b7ac); 
+}
+/* 스크롤바 색 */
+::-webkit-scrollbar-button { display: none; }
+
 /* .container{
 	padding-bottom:10%;
 } */
@@ -318,7 +329,7 @@ body.pc{
 .hi{
     width:100%;
 	height:100%;
-	padding:5%;
+	padding:10%;
     margin:0 auto;
 }
 .hi .website{
@@ -519,6 +530,59 @@ body.pc{
 		padding-top:20%;
 	}
 	/* Art */
+	/* site */
+	.hi{
+		width:100%;
+		height:100%;
+		padding:0;
+	}
+	.hi .website{
+		float:none;
+		width:100%;
+		height:162vh;
+		padding:5%;
+		margin-top:0;
+		padding-top:0;
+	}
+	.hi .website p{
+		position:relative;
+		top:-10px;
+		width:200px;
+		height:50px;
+		font-size:3vw;
+		font-weight:900;
+		font-family:sans-serif;
+		color:#333;
+		margin:0 auto;
+		margin-top:5%;
+		padding-top:0;
+		letter-spacing:1px;
+	}
+	.hi p:after{
+		content:"";
+		position:absolute;
+		width:30px;
+		border-top:4px solid #ab1;
+		left:42.5%;
+		top:40vh;
+		transform:translate(-50% -50%);
+	}
+	.hi .website .widthmeet{
+		width:100%;
+		height:auto;
+		margin-top:0;
+		padding-top:0;
+	}
+	.hi .website .widthmeet img{
+		position:none;
+		float:left;
+		width:100%;
+		top:0;
+		padding:5%;
+		margin-top:0;
+		transition:all .5s;
+	}
+	/* site */
 }
 @media(max-width:768px){
 	/* Skill */
@@ -606,16 +670,21 @@ body.pc{
 		display:none;
 	}
 	.artbox .posi_pone{
-		font-size:5vw;
+		font-size:4.8vw;
 		padding:10%;
 		padding-top:20%;
 	}
 	.artbox .posi_ptwo{
 		font-size:5vw;
 		padding:10%;
-		padding-top:30%;
+		padding-top:40%;
 	}
 	/* Art */
+	/* site */
+	.hi .website{
+		height:120vh;
+	}
+	/* site */
 }
 @media(max-width:720px){
 	body.mb{

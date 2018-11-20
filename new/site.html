@@ -1,0 +1,47 @@
+<article class="content privacy_area">
+	<div class="section back_four">
+		<p class="bold">Site copy</p>
+		<div class="hi">
+			<div class="website">
+				<p>subway</p>
+				<div class="widthmeet">
+					<img src="img/subway.jpg" alt="" class="optopone">
+				</div>
+			</div>
+			<div class="website">
+				<p>greentrip</p>
+				<div class="widthmeet">
+					<img src="img/greentrip.jpg" alt="" class="optoptwo">
+				</div>
+			</div>
+			<div class="website">
+				<p>city</p>
+				<div class="widthmeet">
+					<img src="img/city.jpg" alt="" class="optopthree">
+				</div>
+			</div>
+		</div>
+	</div>
+</article>
+<script>
+	$(function(){
+		var wh = $(window).height();
+		var header = $('.header').height();
+		var ch = $('.container').height();
+		var oneh = wh - header;
+		$('.section').css({
+			height:ch + 'px'
+		})
+		$(window).on('resize', function(){
+			var wh = $(window).height();
+			var header = $('.header').height();
+			var ch = $('.container').height();
+			var oneh = wh - header;
+			$('.section').css({
+				height:ch + 'px'
+			})
+		})
+	})
+</script>
+
+

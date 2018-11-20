@@ -107,11 +107,11 @@ html, body, .wrap {height:100%;}
 .header .nav li a:hover {
 	text-shadow:0 3px 0 rgba(0,0,0,.15);
 }
-.header .nav .home a        {color:var(--home);}
-.header .nav .study a       {color:var(--study);}
-.header .nav .family a      {color:var(--family);}
-.header .nav .work a        {color:var(--work);}
-.header .nav .privacy a     {color:var(--privacy);}
+.header .nav .home a        {color:var(--home); text-transform:capitalize;}
+.header .nav .study a       {color:var(--study);  text-transform:capitalize;}
+.header .nav .family a      {color:var(--family);  text-transform:capitalize;}
+.header .nav .work a        {color:var(--work);  text-transform:capitalize;}
+.header .nav .privacy a     {color:var(--privacy);  text-transform:capitalize;}
 .header .nav_open {display:none;}
 
 .header .dot {
@@ -134,6 +134,10 @@ html, body, .wrap {height:100%;}
 	width:230px; height:230px;
 	line-height:50px; margin-top:20px;
 	z-index:9999;
+}
+.firefox .header .loading,
+.ie .header .loading{
+	opacity:0;
 }
 .header .loading:after {
 	position:absolute; left:0; top:0;
