@@ -1,0 +1,508 @@
+.header{
+    width:100%;
+    height:169px;
+}
+.a{
+    width:1100px;
+    margin:0 auto;
+}
+/* 전체 지정 부분 */
+
+
+
+.introbox{
+    width:100%;
+    height:36px;
+    background:#ebebeb;
+}
+.intro{
+    height:36px;
+}
+/* intro style */
+.intro .int li{
+    float:left;
+    line-height:36px;
+    margin-left:15px;
+}
+.intro .int li strong{
+    margin-left:15px;
+    color:#bbb;
+}
+.intro .webMode{
+    float:right;
+}
+.intro > .webMode li{
+    float:left;
+    height:34px;
+    text-align:center;
+    line-height:36px;
+    background:#999;
+}
+.intro > .webMode li a{
+    color:#fff;
+}
+.intro > .webMode > li{
+    min-width:85px;
+    height:36px;
+    right:0;
+    border:1px solid #bbb;
+}
+.intro > .webMode > li > select{
+    height:36px;
+    border:1px solid rgba(0,0,0,0);
+    color:#fff;
+    background:rgba(0,0,0,0);
+}
+.intro > .webMode > li > select > option{
+    color:#000;
+}
+.intro > .webMode > li > select > option:first-child{
+    display:none;
+}
+.intro > .webMode > li > ul > li{
+    width:33.3%;
+}
+/* intro END*/
+/* input style */
+.inputbox{
+    width:100%;
+    height:89px;
+}
+.input{
+    height:89px;
+}
+.input::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.input > ul > li{
+    float:left;
+    width:33.3%;
+    height:100%;
+}
+/* input logo style */
+.input > ul > .tLogo > a{
+    display:inline-block;
+    height:89px;
+    padding:15px 0 0 15px;
+}
+.input > ul > .tLogo > a > img{
+    width:180px;
+    height:auto;
+}
+/* input tnb & search style */
+.input > ul > li > ul{
+    height:89px;
+}
+/* input tnb style */
+.input > ul > li > ul > li > .tnb{
+    width:100%;
+    height:34px;
+    padding-left:40px;
+}
+.input > ul > li > ul > li > .tnb::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.input > ul > li > ul > li > .tnb > li{
+    float:left;
+    margin:10px 10px;
+}
+.input > ul > li > ul > li > .tnb > li > strong{
+    margin-left:15px;
+    color:#bbb;
+}
+/* input search style */
+.input > ul > li > ul > li > .search{
+    width:95%;
+    height:35px;
+    margin-left:10px;
+    border:1px solid #aaa;
+}
+.input > ul > li > ul > li > .search::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.input > ul > li > ul > li > .search > li{
+    float:left;
+}
+.input > ul > li > ul > li > .search > li::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.input > ul > li > ul > li > .search > li > select{
+    float:left;
+    height:34px;
+    border:1px solid rgba(0,0,0,0);
+    background:rgba(0,0,0,0);
+}
+.input > ul > li > ul > li > .search > li > select > option:first-child{
+    display:none;
+}
+.input > ul > li > ul > li > .search > li > input{
+    float:left;
+    width:235px;
+    height:32px;
+    border:1px solid rgba(0,0,0,0);
+}
+
+.input > ul > li > ul > li > .search > li > a > img{
+    width:35px;
+    height:32px;
+}
+/* input search END */
+/* input date */
+.input > ul > .date{
+    height:89px;
+    text-align:center;
+    background:url(../images/kyosung/winter.jpg) no-repeat 40px 0;
+}
+.input > ul > .date > ul > .day{
+    margin-top:25px;
+}
+.input > ul > .date > ul b{
+    font-size:16px;
+}
+.input > ul > .date > ul > .time > b{
+    font-weight:600;
+    color:#f30;
+}
+/* input END */
+
+
+.toptebbox{
+    width:100%;
+    height:44px;
+}
+.topteb{
+    height:100%;
+    text-align:left;
+    z-index:1;
+}
+.topteb .mainmenu{
+    width:100%;
+    height:100%;
+    padding-left:40px;
+}
+.topteb .mainmenu:hover .submenu{
+    display:block;
+}
+.topteb .mainmenu > li{
+    position:relative;
+}
+.topteb .mainmenu::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+body .header .topteb .mainmenu > li{
+    float:left;
+    width:12%;
+    height:100%;
+    line-height:44px;
+    text-align:center;
+}
+.topteb .mainmenu > li:hover{
+    background:#8cd2dc;
+}
+.topteb .mainmenu > li > a{
+    font-size:16px;
+    font-weight:600;
+}
+.topteb .mainmenu li .submenu{
+    position:absolute;
+    display:none;
+    width:100%;
+    height:280px;
+    background:#fff;
+    border-top:2px solid rgba(0,0,0,0.1);
+    z-index:1;
+}
+.topteb .mainmenu .submenu li{
+    overflow:hidden;
+    width:100%;
+    height:40px;
+    line-height:40px;
+}
+.topteb .mainmenu .submenu li:hover{
+    background:#333;
+}
+.topteb .mainmenu .submenu li:hover a{
+    color:#fff;
+}
+.topteb .mainmenu .submenu a{
+    font-size:14px;
+    color:#000;
+}
+/* topteb */
+/* header */
+
+.container{
+    width:100%;
+    height:1284px;
+    border-top:2px solid rgba(0,0,0,0.1);
+}
+.two{
+    width:100%;
+    height:340px;
+    background:#eaf9ff;
+}
+.twobox{
+    height:340px;
+}
+.news{
+    position:relative;
+    float:left;
+    width:320px;
+    height:340px;
+    padding:30px;
+    background:#fff;
+}
+.news .newsKind::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.news .newsKind > li{
+    float:left;
+    width:25%;
+    height:33px;
+    line-height:33px;
+    text-align:center;
+    border-bottom:1px solid #bbb;
+    background:#f7f7f7;
+}
+.news .newsKind > .pick{
+    background:#00f;
+}
+.news .newsKind > .pick > a{
+    color:#fff;
+}
+.news .newsKind > li > ul{
+    position:absolute;
+    display:none;
+    width:260px;
+    height:125px;
+    top:73px;
+    left:30px;
+    text-align:left;
+    background:#fff;
+}
+.news .newsKind > li > .on{
+    display:block;
+}
+.news .newsKind > li > ul > li{
+    width:100%;
+    height:15%;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.news .newsKind > li > ul > li::before{
+    content:"ㆍ";
+}
+.news img{
+    position:absolute;
+    top:230px;
+}
+.talk{
+    float:right;
+    width:780px;
+    height:340px;
+}
+.talk img{
+    height:100%;
+    width:100%;
+}
+/* //.two / header 아래쪽 (공지사항 보도자료(왼쪽) - 이미지(오른쪽))가 있는 부분 */
+.threebox{
+    height:157px;
+}
+.three{
+    width:100%;
+    height:157px;
+}
+/* .human style */
+.human{
+    position:relative;
+    float:left;
+    width:320px;
+    height:157px;
+}
+.human a{
+    font-weight:600;
+}
+.human ul{
+    width:130px;
+    height:40px;
+}
+.human .kyoQuick{
+    position:absolute;
+    top:45px;
+    left:165px;
+}
+.human .kyoQuick > li{
+    float:left;
+    width:55px;
+    height:20px;
+    line-height:20px;
+    text-align:center;
+}
+.human .kyoQuick .btn_Quick{
+    width:55px;
+    height:20px;
+    background:#8cd2dc;
+    border-radius:3px;
+}
+.human .kyoQuick .btn_Quick a{
+    color:#fff;
+}
+.human .kyoQuick > li b{
+    font-size:16px;
+    font-weight:600;
+}
+.human .hour24{
+    position:absolute;
+    top:85px;
+    left:145px;
+}
+.human .hour24 a::before{
+    content:"ㆍ";
+}
+/* .three .tebmenu style */
+.tebmenu{
+    float:right;
+    width:780px;
+    height:157px;
+}
+.tebmenu li{
+    float:left;
+    width:12.5%;
+    height:110px;
+    margin-top:30px;
+    text-align:center;
+}
+.tebmenu li a{
+    font-weight:600;
+}
+.tebmenu li img{
+    width:68px;
+    height:63px;
+    margin-bottom:10px;
+}
+/* //.three / two 부분 아래쪽 (교섭이 이미지(왼쪽) - 텝매뉴,아이콘(오른쪽))이 있는 부분 */
+/* 여기서부터는 안하셔도 됩니다. */
+.fourbox{
+    height:165px;
+    background:rgba(226, 103, 103, 0.637);
+}
+.four{
+    width:100%;
+    height:165px;
+    background:rgb(48, 33, 131);
+    border-top:5px solid rgb(255, 255, 255);
+}
+.newsimg{
+    float:left;
+    width:731px;
+    height:165px;
+    background:rgb(144, 188, 238);
+}
+.newsteb{
+    float:right;
+    width:369px;
+    height:165px;
+    background:rgb(68, 28, 50);
+}
+/* //.four / three 부분 아래쪽 (이미지 정보 3구간(왼쪽) - 텝매뉴 재난 정보(오른쪽))가 있는 부분 */
+.fivebox{
+    height:258px;
+    background:rgba(0, 0, 0, 0.637);
+}
+.five{
+    width:100%;
+    height:258px;
+    background:rgb(194, 192, 65);
+}
+.smlieimg{
+    float:left;
+    width:430px;
+    height:258px;
+    background:rgb(2, 25, 51);
+}
+.notice{
+    float:left;
+    width:301px;
+    height:258px;
+    background:rgb(3, 0, 165);
+}
+.report{
+    float:right;
+    width:369px;
+    height:258px;
+    background:rgb(165, 0, 14);
+}
+/* //.five / four 부분 아래쪽 (스마일 이미지(왼쪽) - 알림창(중앙) - 신고 이미지(오른쪽))가 있는 부분 */
+.sixbox{
+    height:60px;
+    background:rgba(160, 79, 79, 0.637);
+}
+.six{
+    width:100%;
+    height:60px;
+    background:rgb(6, 68, 24);
+}
+/* //.six / five 부분 아래쪽 (사이트 정보)가 있는 부분 */
+.sevenbox{
+    height:245px;
+    background:rgba(30, 16, 95, 0.637);
+}
+.seven{
+    width:100%;
+    height:245px;
+    background:rgb(118, 131, 122);
+}
+/* //.seven / six 부분 아래쪽 (시민, 관광객, 사업자)가 있는 부분 */
+.eightbox{
+    height:59px;
+    background:rgb(30, 16, 95);
+}
+.eight{
+    width:100%;
+    height:59px;
+    background:rgb(1, 44, 14);
+}
+/* //.eight / seven 부분 아래쪽 (파란색 바)가 있는 부분 */
+/* container */
+
+
+.footer{
+    width:100%;
+    height:110px;
+    background:rgba(47, 0, 255, 0.295);
+}
+.footerbox{
+
+}
+.fotlogo{
+    float:left;
+    width:140px;
+    height:110px;
+    background:rgba(48, 206, 0, 0.781);
+}
+.ads{
+    float:left;
+    width:670px;
+    height:110px;
+    background:rgba(129, 184, 221, 0.781);
+}
+.fotlogotwo{
+    float:right;
+    width:290px;
+    height:110px;
+    background:rgba(34, 77, 105, 0.781);
+}

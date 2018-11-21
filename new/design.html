@@ -1,7 +1,10 @@
+
+<!-- family -->
 <article class="content family_area">
 	<div class="section back_three">
 		<div class="designwidth">
 			<span class="sizebold">My Design</span>
+			<p class="textsize">Visual Design 작품들<br>① PACKAGE ② ADVERTISE ③ ADITORIAL <br> ④ MODELING ⑤ UIUX ⑥ LOGODESIGN<br></p>
 			<button class="btn">scrollbutton</button>
 		</div>
 		<div class="widthposition">
@@ -82,15 +85,13 @@ $(function(){
 		})
 	})
 	scrollHeight();
+	scrollBtn();
+
 	function scrollHeight(){
 		$('.container').scroll(function () {
-			if ($('.container').scrollTop() > 478) {
-				$('.btn').stop().animate({opacity:1},100)
-			}
 			if ($('.container').scrollTop() > 878) {
 				$('.active1').stop().animate({opacity:1,marginTop:'-55px'});
 				$('.opacity1').delay(300).animate({opacity:1})
-				$('.btn').stop().animate({opacity:0},100)
 			}
 			if ($('.container').scrollTop() > 1628) {
 				$('.active2').stop().animate({opacity:1,marginTop:'3px'});
@@ -113,6 +114,16 @@ $(function(){
 				$('.opacity6').delay(300).animate({opacity:1})
 			}
 		});
+	}
+
+	function scrollBtn(){
+		$('.container').scroll(function(){
+			if ($('.container').scrollTop() > 0) {
+				$('.btn').stop().animate({opacity:0},100)
+			} else{
+				$('.btn').stop().animate({opacity:1},100)
+			}
+		})
 	}
 })
 </script>

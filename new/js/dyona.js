@@ -16,4 +16,14 @@ $(document).ready(function(){
 			height:set + 'px'
 		})
 	}
+	$('.container').slimScroll({
+        size : '7px',
+        color: '#333',
+		opacity : 1,
+        railColor : '#333',
+        railOpacity : .2,
+        wheelStep : 8,
+		touchScrollStep : 100,
+        railBorderRadius : '7px'
+	});
 })

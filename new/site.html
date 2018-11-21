@@ -1,28 +1,35 @@
+
+	<!-- privacy -->
 <article class="content privacy_area">
 	<div class="section back_four">
-		<p class="bold">Site copy</p>
+		<div class="widthbold">
+			<p class="bold">Site</p>
+			<p class="textsize">Site copy [Subway, Greentrip] 는 기존의 사이트를 보고 카피.<br>Site make [City] PSD 파일을 보고 제작. <br>이 웹사이트 들은 반응형이 아닌 PC용 모드로 만듬</p>
+			<button class="btn">scrollbutton</button>
+		</div>
 		<div class="hi">
 			<div class="website">
 				<p>subway</p>
 				<div class="widthmeet">
-					<img src="img/subway.jpg" alt="" class="optopone">
+					<a href="site/subway/index.html"><img src="img/subway.jpg" alt="" class="optopone"><span class="hover">GO SUBWAY URL</span></a>
 				</div>
 			</div>
 			<div class="website">
 				<p>greentrip</p>
 				<div class="widthmeet">
-					<img src="img/greentrip.jpg" alt="" class="optoptwo">
+					<a href="site/greentrip/index.html"><img src="img/greentrip.jpg" alt="" class="optoptwo"><span class="hover">GO GREENTRIP URL</span></a>
 				</div>
 			</div>
 			<div class="website">
 				<p>city</p>
 				<div class="widthmeet">
-					<img src="img/city.jpg" alt="" class="optopthree">
+					<a href="site/city/index.html"><img src="img/city.jpg" alt="" class="optopthree"><span class="hover">GO CITY URL</span></a>
 				</div>
 			</div>
 		</div>
 	</div>
 </article>
+
 <script>
 	$(function(){
 		var wh = $(window).height();
@@ -42,6 +49,16 @@
 			})
 		})
 	})
-</script>
+	scrollOpacity();
 
+	function scrollOpacity(){
+		$('.container').scroll(function () {
+			if ($('.container').scrollTop() > 0) {
+				$('.btn').stop().animate({opacity:0},100)
+			} else{
+				$('.btn').stop().animate({opacity:1},100)
+			}
+		}
+	)}
+</script>
 

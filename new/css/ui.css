@@ -19,14 +19,15 @@ img {height:auto; border:0; vertical-align:top;}
 
 /* 폰트, 색상 세팅 */
 :root {
-	--home:     #444;
-	--study:    #5193ff;
-	--family:   #ff0066;
-	--work:     #00986b;
-	--privacy:  #ff9000;
+	--home:     rgb(0, 165, 241);
+	--study:    rgb(0, 136, 199);
+	--family:   rgb(0, 98, 143);
+	--work:     rgb(0, 136, 199);
+	--privacy:  rgb(0, 165, 241);
 	--font-kr: 'Noto Sans KR', sans-serif;
 	--font-en: 'PT Sans','Bungee', cursive;
 	--respon: 720px;
+	
 }
 body {overflow:hidden;font-family:var(--font-kr); font-weight:800;}
 
@@ -288,4 +289,3 @@ html, body, .wrap {height:100%;}
 .content.family_area     {color:var(--family);}
 .content.work_area       {color:var(--work);}
 .content.privacy_area    {color:var(--privacy);}
-

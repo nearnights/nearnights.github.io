@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>subway</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper-4.3.5.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.min.css">
+    <script type="text/javascript" src="js/jquery/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="js/plugin/swiper-4.3.5.min.js"></script>
+    <script type="text/javascript" src="js/plugin/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="js/common/slide.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="headerhidden">
+            <div class="headerbox a">
+                <div class="logo">
+                    <h1><a href="#"><img src="images/logo.png" alt=""></a></h1>
+                </div>
+                <div class="loginlist">
+                    <ul>
+                        <li><a href="#"><img src="images/earth.png" alt=""></a></li>
+                        <li><a href="#">고객센터</a></li>
+                        <li><a href="#">가맹신청·문의</a></li>
+                        <li><a href="#">매장찾기</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- header box 상단 로그인바 -->
+            <div class="headerlist">
+                <div class="border">
+                    <div class="headerl_box a">
+                        <ul>
+                            <li class="space"><a href="#">매뉴소개</a>
+                                <ul>
+                                    <li><a href="#">센드위치</a></li>
+                                    <li><a href="#">찹샐러드</a></li>
+                                    <li><a href="#">추가토핑</a></li>
+                                    <li><a href="#">사이드·음료</a></li>
+                                    <li><a href="#">단체메뉴</a></li>
+                                    <li><a href="#">신선한 재료 소개</a></li>
+                                </ul>
+                            </li>
+                            <li class="space"><a href="#">이용방법</a>
+                                <ul>
+                                    <li><a href="#">써브웨이 이용방법</a></li>
+                                    <li><a href="#">단체메뉴 이용방법</a></li>
+                                </ul>
+                            </li>
+                            <li class="space"><a href="#">새소식</a>
+                                <ul>
+                                    <li><a href="#">이벤트·프로모션</a></li>
+                                    <li><a href="#">뉴스·공지사항</a></li>
+                                    <li><a href="#">TV광고</a></li>
+                                </ul>
+                            </li>
+                            <li class="space"><a href="#">써브웨이</a>
+                                <ul>
+                                    <li><a href="#">써브웨이 역사</a></li>
+                                    <li><a href="#">써브웨이 약속</a></li>
+                                    <li><a href="#">센드위치 아티스트 지원</a></li>
+                                    <li><a href="#">매장찾기</a></li>
+                                </ul>
+                            </li>
+                            <li class="space"><a href="#">가맹점</a>
+                                <ul>
+                                    <li><a href="#">써브웨이 프랜차이즈</a></li>
+                                    <li><a href="#">가맹관련 FAQ</a></li>
+                                    <li><a href="#">가맹신청·문의</a></li>
+                                    <li><a href="#">지사안내</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- header list 오버플로우 -->
+        </div>
+        <!-- headerhidden -->
+    </div>
+    <!-- header -->
+    <div class="container">
+        <div class="topimgbar">
+            <div class="swiper-animation">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(images/slide/bar1.png);"></div>
+                    <div class="swiper-slide" style="background-image:url(images/slide/bar2.png);"></div>
+                    <div class="swiper-slide" style="background-image:url(images/slide/bar3.png);"></div>
+                    <div class="swiper-slide" style="background-image:url(images/slide/bar4.png);"></div>
+                    <div class="swiper-slide" style="background-image:url(images/slide/bar5.png);"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <script>
+                    new Swiper('.swiper-animation',{
+                        direction: 'horizontal',
+                        initialSlide: 0,
+                        slidesPerView : 1,
+                        autoplay: {
+                            delay : 2000,
+                        },
+                        autoplayDisableOnInteraction: true,
+                        speed : 1000,
+                        centeredSlides: true,
+                        loop : true,
+                        effect : 'slide',
+
+                        pagination : { // 페이징
+                            el : '.swiper-pagination',
+                            clickable : true,
+                            type: 'bullets',
+                            renderBullet: function (index, className) { 
+                                return '<span class="' + className + '">'  + '</span>';
+                            },
+                        },
+                    });
+                </script>
+            </div>
+        </div>
+        <!-- topimgbar 슬라이드바 -->
+        <div class="storeview">
+            <div class="store_btn"><a href="#"><img src="images/storeicon.png" alt="">매장찾기</a></div>
+            <div class="qna_btn"><a href="#"><img src="images/noteicon.png" alt="">가맹신청·문의</a></div>
+        </div>
+        <!-- storeview 매장찾기 -->
+        <div class="menu">
+            <div class="imagemenu a">
+                <img src="images/h2img.png" alt=""><h2 class="posi">Subway's Menu</h2>
+                <ul class="classic">
+                    <li class="style" id="style"><a href="#style">아침메뉴</a></li>
+                    <li class="style" id="style2"><a href="#style2">프리미엄</a></li>
+                    <li class="style" id="style3"><a href="#style3">프레쉬&라이트</a></li>
+                    <li class="style" id="style4"><a href="#style4">클래식</a></li>
+                </ul>
+            </div>
+            <div class="bxa">
+                <div class="slidemenu1 sidemenu">
+                    <div class="bx-slider menuslide" id="style4">
+                        <div class="bx-sendwitch">
+                            <img src="images/slide/sendwitcha1.jpg" alt="">
+                            <p class="top"><strong>이탈리안 비엠티</strong></p>
+                            <p><br>7시간 숙성된 페퍼로니, 살라미<br> 그리고 햄이 만들어내는 최상의 조화!<br> 전세계가 사랑하는 No.1 베스트셀러!<br> Biggest Meatiest Tastiest, It's B.M.T.!</p>
+                        </div>
+                        <div class="bx-sendwitch">
+                            <img src="images/slide/sendwitcha2.jpg" alt="">
+                            <p class="top"><strong>비엘티</strong></p>
+                            <p><br>오리지널 아메리칸 베이컨의 <br>풍미와 바삭함 그대로~</p>
+                        </div>
+                        <div class="bx-sendwitch">
+                            <img src="images/slide/sendwitcha3.jpg" alt="">
+                            <p class="top"><strong>미트볼</strong></p>
+                            <p><br>이탈리안 스타일 비프 미트볼에<br> 써브웨이만의 풍부한 토마토 향이 살아있는<br> 마리나라 소스를 듬뿍</p>
+                        </div>
+                        <div class="bx-sendwitch"> 
+                            <img src="images/slide/sendwitcha4.jpg" alt="">
+                            <p class="top"><strong>햄</strong></p>
+                            <p><br>기본 중에 기본!<br>풍부한 햄이 만들어내는<br>입 안 가득 넘치는 맛의 향연</p>
+                        </div>
+                        <div class="bx-sendwitch">
+                            <img src="images/slide/sendwitcha5.jpg" alt="">
+                            <p class="top"><strong>참치</strong></p>
+                            <p><br>남녀노소 누구나 좋아하는<br>담백한 참치와 고소한 마요네즈의<br>완벽한 조화</p>
+                        </div>
+                        <div class="bx-sendwitch">
+                            <img src="images/slide/sendwitcha6.jpg" alt="">
+                            <p class="top"><strong>에그마요</strong></p>
+                            <p><br>친환경 인증 받은 농장에서 생산된 달걀과<br>고소한 마요네즈가 만나 더 부드러운<br>에그마요 찹 샐러드</p>
+                        </div>
+                        <div class="bx-sendwitch">
+                            <img src="images/slide/sendwitcha7.jpg" alt="">
+                            <p class="top"><strong>로티세리 치킨</strong></p>
+                            <p><br>촉촉한 바비큐 치킨의 풍미가득.<br>손으로 짖어 더욱 부드러운 치킨의 혁명</p>
+                        </div>
+                        <div class="bx-sendwitch">
+                            <img src="images/slide/sendwitcha8.jpg" alt="">
+                            <p class="top"><strong>로스트 치킨</strong></p>
+                            <p><br>오븐에 구워 담백한 저칼로리.<br>닭가슴살의 건강한 풍미</p>
+                        </div>
+                        <div class="bx-sendwitch">
+                            <img src="images/slide/sendwitcha9.jpg" alt="">
+                            <p class="top"><strong>로스트 비프</strong></p>
+                            <p><br>청정 호주 쇠고기를 오븐에 구워 더욱 담백하고<br>풍부한 맛이 살아있는 비프 샌드위치</p>
+                        </div>
+                        <div class="bx-sendwitch">
+                            <img src="images/slide/sendwitcha10.jpg" alt="">
+                            <p class="top"><strong>써브웨이 클럽</strong></p>
+                            <p><br>명실공히 시그니처 써브!<br>터키, 비프, 포크 햄의 완벽한 앙상블</p>
+                        </div>
+                        <div class="bx-sendwitch">
+                            <img src="images/slide/sendwitcha11.jpg" alt="">
+                            <p class="top"><strong>터키</strong></p>
+                            <p><br>280kcal로 슬림하게 즐기는<br>오리지날 터키 샌드위치</p>
+                        </div>
+                        <div class="bx-sendwitch">
+                            <img src="images/slide/sendwitcha12.jpg" alt="">
+                            <p class="top"><strong>배지</strong></p>
+                            <p><br>갓 구운 빵과 신선한 7가지 야채로<br>즐기는 깔끔한 한끼</p>
+                        </div>
+                        <div class="bx-sendwitch">
+                            <img src="images/slide/sendwitcha13.jpg" alt="">
+                            <p class="top"><strong>스테이크&치즈</strong></p>
+                            <p><br>육즙이 쫙~<br>풍부한 비프 스테이크의 풍미가 입안 한가득</p>
+                        </div>
+                        <div class="bx-sendwitch">
+                            <img src="images/slide/sendwitcha14.jpg" alt="">
+                            <p class="top"><strong>터키 베이컨 아보카도</strong></p>
+                            <p><br>담백한 터키와 바삭한 베이컨 환상조합에<br>부드러운 아보카도는 신의 한수</p>
+                        </div>
+                        <div class="bx-sendwitch">
+                            <img src="images/slide/sendwitcha15.jpg" alt="">
+                            <p class="top"><strong>치킨 베이컨 랜치</strong></p>
+                            <p><br>바삭한 베이컨과 담백한 치킨의 이중주</p>
+                        </div>
+                        <div class="bx-sendwitch">
+                            <img src="images/slide/sendwitcha16.jpg" alt="">
+                            <p class="top"><strong>써브웨이 멜트</strong></p>
+                            <p><br>자신있게 추천하는 터키,햄,베이컨의<br>완벽한 맛의 밸런스</p>
+                        </div>
+                        <div class="bx-sendwitch">
+                            <img src="images/slide/sendwitcha17.jpg" alt="">
+                            <p class="top"><strong>터키 베이컨</strong></p>
+                            <p><br>담백한 터키와 바삭한 베이컨의 기분 좋은 만남</p>
+                        </div>
+                        <div class="bx-sendwitch">
+                            <img src="images/slide/sendwitcha18.jpg" alt="">
+                            <p class="top"><strong>스파이시 이탈리안</strong></p>
+                            <p><br>살라미,페퍼로니가 입안 한가득!<br>쏘 핫한 이탈리아의 맛</p>
+                        </div>
+                        <div class="bx-sendwitch">
+                            <img src="images/slide/sendwitcha19.jpg" alt="">
+                            <p class="top"><strong>치킨 데리야끼</strong></p>
+                            <p><br>담백한 치킨 스트립에 달콤짭쪼름한 써브웨이<br>특제 데리야끼 소스와의 환상적인 만남</p>
+                        </div>
+                        <div class="bx-sendwitch">
+                            <img src="images/slide/sendwitcha20.jpg" alt="">
+                            <p class="top"><strong class="top">풀드포크</strong></a></p>
+                            <p><br>7시간 저온 훈연한 미국 정통 스타일의<br>리얼 바비큐 풀드포크는 오진 써브웨이에서</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="news">
+            <div class="fun">
+                <div class="subwayfun">
+                    <p>써브웨이를 <br>제대로 즐기는 방법!</p>
+                    <a href="#"><span>이용방법</span></a>
+                </div>
+                <div class="subwayright">
+                    <p>50년 역사를 가진<br>No.1 프랜차이즈의 성장기</p>
+                    <a href="#"><span>써브웨이 역사</span></a>
+                </div>
+                <div class="white">
+                    <img src="images/h2img.png" alt="">
+                    <h2 class="subwaymenu position">What's New</h2>
+                    <p>써브웨이의 다양한 소식을<br>빠르게 전달해드립니다.</p>
+                    <div class="greenline">
+                        <ul>
+                            <li><a href="#" class="line">써브웨이와 함께하는 tvN '빅포레스트'</a></li>
+                            <li><a href="#" class="line">써브웨이와 함께하는 tvN '쇼미더머니 777'</a></li>
+                            <li><a href="#" class="line">고객 경험 설문조사 프로그램 안내</a></li>
+                        </ul>
+                        <a href="#" title="더보기" class="gray">more</a>
+                    </div>
+                </div>
+                <div class="show">
+                    <div class="width">
+                        <div><img src="images/slide/bottombar1.jpg" alt=""></div>
+                        <div><img src="images/slide/bottombar2.jpg" alt=""></div>
+                        <div><img src="images/slide/bottombar3.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btnbottom">
+            <div class="btnimg">
+                <div class="btnposition">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="images/btn1.png" alt=""><p><span>프렌차이즈</span><br>개설절차/투자비용 정보</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/btn2.png" alt=""><p><span>지사안내</span><br>수도권/지방 지사정보</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/btn3.png" alt=""><p><span>TV광고</span><br>TV광고/동영상</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/btn4.png" alt=""><p><span>1:1 문의</span><br>개선/문의사항</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footercenter">
+            <div class="footerlist">
+                <ul>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">점주관리자</a></li>
+                    <li><a href="#">Subway Listens</a></li>
+                </ul>
+                <div class="address">
+                    <address>서울시 서초구 강남대로 535 프린스빌딩 15층 대표<span>콜린클락 전화</span> 02-797-5036<br>SUBWAY® is a Registered Trademark of Subway IP Inc.© 2018 Subway IP Inc.All Rights Reserved.</address>
+                    <div class="facebookicon">
+                        <img src="images/facebook1.png" alt="" class="hover">
+                        <img src="images/facebook2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<!-- <ul>
+    <li><a href="#">이탈리안 비엠티</a>
+        <p>7시간 숙성된 페퍼로니, 살라미<br> 그리고 햄이 만들어내는 최상의 조화!<br> 전세계가 사랑하는 No.1 베스트셀러!<br> Biggest Meatiest Tastiest, It's B.M.T.!</p>
+    </li>
+    <div><a href="#">비엘티</a>
+        <p>오리지널 아메리칸 베이컨의 <br>풍미와 바삭함 그대로~</p>
+    </div>
+    <div><a href="#">미트볼</a>
+        <p>이탈리안 스타일 비프 미트볼에<br> 써브웨이만의 풍부한 토마토 향이 살아있는<br> 마리나라 소스를 듬뿍</p>
+    </div>
+    <li><a href="#">햄</a>
+        <p>기본 중에 기본!<br>풍부한 햄이 만들어내는<br>입 안 가득 넘치는 맛의 향연</p>
+    </li>
+</ul> -->
