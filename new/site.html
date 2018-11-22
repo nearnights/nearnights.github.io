@@ -3,27 +3,36 @@
 <article class="content privacy_area">
 	<div class="section back_four">
 		<div class="widthbold">
-			<p class="bold">Site</p>
-			<p class="textsize">Site copy [Subway, Greentrip] 는 기존의 사이트를 보고 카피.<br>Site make [City] PSD 파일을 보고 제작. <br>이 웹사이트 들은 반응형이 아닌 PC용 모드로 만듬</p>
+			<p class="none bold">Site</p>
+			<p class="none textsize">Site copy [Subway, Greentrip] 는 기존의 사이트를 보고 카피.<br>Site make [City] PSD 파일을 보고 제작. <br>이 웹사이트 들은 반응형이 아닌 PC용 모드로 만듬</p>
 			<button class="btn">scrollbutton</button>
 		</div>
 		<div class="hi">
 			<div class="website">
 				<p>subway</p>
 				<div class="widthmeet">
-					<a href="site/subway/index.html"><img src="img/subway.jpg" alt="" class="optopone"><span class="hover">GO SUBWAY URL</span></a>
+					<a href="site/subway/index.html">
+						<img src="img/subway.jpg" alt="서브웨이사이트">
+						<span class="hover">GO SUBWAY URL</span>
+					</a>
 				</div>
 			</div>
 			<div class="website">
 				<p>greentrip</p>
 				<div class="widthmeet">
-					<a href="site/greentrip/index.html"><img src="img/greentrip.jpg" alt="" class="optoptwo"><span class="hover">GO GREENTRIP URL</span></a>
+					<a href="site/greentrip/index.html">
+						<img src="img/greentrip.jpg" alt="초록여행사이트">
+						<span class="hover">GO GREENTRIP URL</span>
+					</a>
 				</div>
 			</div>
 			<div class="website">
 				<p>city</p>
 				<div class="widthmeet">
-					<a href="site/city/index.html"><img src="img/city.jpg" alt="" class="optopthree"><span class="hover">GO CITY URL</span></a>
+					<a href="site/city/index.html">
+						<img src="img/city.jpg" alt="교성시청사이트">
+						<span class="hover">GO CITY URL</span>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -48,17 +57,25 @@
 				height:ch + 'px'
 			})
 		})
-	})
-	scrollOpacity();
+		
+		ScrollOpacity();
 
-	function scrollOpacity(){
-		$('.container').scroll(function () {
-			if ($('.container').scrollTop() > 0) {
-				$('.btn').stop().animate({opacity:0},100)
-			} else{
-				$('.btn').stop().animate({opacity:1},100)
+		function ScrollOpacity(){
+		$('.container').scroll(function(){
+			var wh = $('.container').width();
+			if(wh > 1025){
+				var animate = -10 + 'px'
+				var scroll = $('.container').scrollTop()
+				if (scroll > 678) {
+					for(var i = 0; i<=2; i++){
+						var delayTime = 200 * i + 1
+						$('.widthmeet img').eq(i).delay(delayTime).animate({opacity:1,top:animate});
+						$('.website p').eq(i).delay(delayTime).animate({opacity:1,top:animate});
+					}
+				}
 			}
-		}
-	)}
+		});
+	}
+})
 </script>
 
