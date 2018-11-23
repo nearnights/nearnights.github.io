@@ -50,6 +50,20 @@ html, body, .wrap {height:100%;}
 	height:100%; 
 	min-height:100%;
 }
+.edge .wrap{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-moz-box-orient: vertical;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	height:100%; 
+	min-height:100%;
+}
 .container {
 	/* -webkit-flex:auto;
 	-ms-flex:auto;
@@ -135,8 +149,9 @@ html, body, .wrap {height:100%;}
 	z-index:9999;
 }
 .firefox .header .loading,
+.edge .header .loading,
 .ie .header .loading{
-	opacity:0;
+	display:none;
 }
 .header .loading:after {
 	position:absolute; left:0; top:0;
