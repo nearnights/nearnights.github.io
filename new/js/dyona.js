@@ -16,7 +16,6 @@ $(document).ready(function(){
 			height:set + 'px'
 		})
 	}
-
 	var wh = $(window).height();
 	var header = $('.header').height();
 	var ch = $('.container').height();

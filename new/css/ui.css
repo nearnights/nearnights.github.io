@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big,
 cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption,
@@ -27,7 +26,6 @@ img {height:auto; border:0; vertical-align:top;}
 	--font-kr: 'Noto Sans KR', sans-serif;
 	--font-en: 'PT Sans','Bungee', cursive;
 	--respon: 720px;
-	
 }
 body {overflow:hidden;font-family:var(--font-kr); font-weight:800;}
 

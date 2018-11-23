@@ -1,7 +1,6 @@
 $(function(){
 
 	// $('.').toggleclass('.block')
-
 	var $html = $('html');
 	var $body = $('body');
 	var responSize = 720;
